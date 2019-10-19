@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Task List</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main class="container">
+		<section class="content">
+		<section class="task-list">
+			<h1>Task List</h1>
+			<div class="task-filter">
+				<label for="filter" class="hidden">Filter tasks</label>
+				<input id="filter" name="filter" type="text" placeholder="Filter tasks">
+			</div>
+			<ul class="task-items"></ul>
+
+			<form class="task-form">
+				<label for="task">Add a task</label>
+				<input id="task" type="text" name="task"></input>
+				<button type="submit" value="Add task">Add</button> 
+				<a href="#" class="clear-tasks button">Clear tasks</a>
+			</form>
+		</section>
+	</main>
+	<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+@import 'reset.css' ;
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap");
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background: #f1b33f;
+    color: #222;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: Inconsolata, monospace;
+    line-height: 1.5;
+    padding: 2em;
+}
+
+/* Layout 
+-----------------------*/
+
+.container {
+    background: #fff;
+    margin: auto;
+    padding: 4rem;
+    width: 100%;
+    max-width: 480px;
+    border-radius: 8px;
+}
+
+/* Task list
+-----------------------*/
+
+.task-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task-list h1 {
+    color: #2c6a65;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.task-list h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.task-list input[type='text'] {
+    width: 100%;
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    transition: 0.3s all ease-in-out;
+}
+
+.task-list input[type='text']:focus {
+    border: 1px solid #ccc;
+}
+
+/* Form
+-----------------------*/
+
+.task-form {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.task-form label {
+    color: #444;
+    font-size: 1.8rem;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.task-form input[type="text"] {
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.task-form button {
+    background: #2c6a65;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Inconsolata Pro", monospace;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    max-width: 8rem;
+    margin: 1.5rem 0 1rem;
+    padding: 0.7rem 2.4rem;
+    letter-spacing: 1px;
+    transition: 0.3s all ease-in-out;
+}
+
+.task-form button:hover {
+    background: #265c57;
+}
+
+/* Filter
+-----------------------*/
+
+.task-filter {
+    width: 40%;
+    margin-left: auto;
+}
+
+.task-filter input {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+}
+
+/* Tasks
+-----------------------*/
+
+.task-items {
+    width: 100%;
+    margin: 1.2rem 0;
+    border-top: 1px solid #eee;
+}
+
+.task-items li {
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Delete button */
+
+.task-items .delete-task {
+    color: #2c6a65;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+/* Clear link */
+
+.clear-tasks {
+    color: #2c6a65;
+}
+
+.clear-tasks:hover {
+    text-decoration: none;
+}
+
+/* Misc 
+-----------------------*/
+
+.hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+
